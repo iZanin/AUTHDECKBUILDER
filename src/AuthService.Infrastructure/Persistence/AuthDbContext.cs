@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using AuthService.Domain.Users;
 
 namespace AuthService.Infrastructure.Persistence;
 
