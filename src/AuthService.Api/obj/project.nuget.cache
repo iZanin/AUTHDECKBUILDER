@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vX8i7B3um7Q=",
+  "dgSpecHash": "dRpEZ5AhJs8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Isael\\source\\repos\\APIGIT\\src\\AuthService.Api\\AuthService.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Isael\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\Isael\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\Isael\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "C:\\Users\\Isael\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.10\\microsoft.entityframeworkcore.9.0.10.nupkg.sha512",
