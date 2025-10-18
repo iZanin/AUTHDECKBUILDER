@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hVRIxnD9h70=",
+  "dgSpecHash": "0a8xFA+xjU0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Isael\\source\\repos\\APIGIT\\src\\AuthService.Application\\AuthService.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Isael\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
