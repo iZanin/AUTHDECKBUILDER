@@ -1,22 +1,20 @@
+using AuthService.Domain.Sessions;
+using AuthService.Domain.Users;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuthService.Infrastructure.Persistence;
 
-public class AuthDbContext : DbContext
+// DbContext da aplicação (banco auth_db)
+public sealed class AuthDbContext : DbContext
 {
-    public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options)
-    {
-    }
+    public DbSet<User> Users => Set<User>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
-    // DbSets serão adicionados conforme necessário
-    // public DbSet<User> Users { get; set; } = null!;
-    // public DbSet<RefreshToken> RefreshTokens { get; set; } = null!;
+    public AuthDbContext(DbContextOptions<AuthDbContext> options) : base(options) { }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    protected override void OnModelCreating(ModelBuilder b)
     {
-        base.OnModelCreating(modelBuilder);
-        
-        // Configurações de entidades serão adicionadas aqui
-        // modelBuilder.ApplyConfigurationsFromAssembly(typeof(AuthDbContext).Assembly);
+        // Importa configurações por assembly (boa prática p/ manter limpo)
+        b.ApplyConfigurationsFromAssembly(typeof(AuthDbContext).Assembly);
     }
 }
